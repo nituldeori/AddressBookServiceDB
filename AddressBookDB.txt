@@ -56,5 +56,11 @@ UC7
 SELECT city, COUNT(*) FROM address_book_table GROUP BY city;
 SELECT state, COUNT(*) FROM address_book_table GROUP BY state;
 
+------------------------------------------------------------------------------------------------------------------
+
+UC8
+
+SELECT * FROM address_book_table ORDER BY firstname where city='Guwahati';
+
 
  
