@@ -74,4 +74,16 @@ ALTER TABLE address_book_table ADD type VARCHAR(250) NOT NULL AFTER name;
 UC10
 
 SELECT type, COUNT(*) FROM address_book_table GROUP BY type;
+
+--------------------------------------------------------------------------------------------------------------------
+
+UC11
+
+INSERT INTO address_book_table (firstname, lastname, name, type, address, city, state, zip, phone_number, email) VALUES
+    ( 'Bill', 'Smith','Bill Smith', Friend, 'Hengrabari', 'Guwahati', 'Assam', '781036', '38723837', 'bill@gmail.com');
+
+INSERT INTO address_book_table (firstname, lastname, name, type, address, city, state, zip, phone_number, email) VALUES
+    ( 'Bill', 'Smith','Bill Smith', Family, 'Hengrabari', 'Guwahati', 'Assam', '781036', '38723837', 'bill@gmail.com');
+
+ 
  
