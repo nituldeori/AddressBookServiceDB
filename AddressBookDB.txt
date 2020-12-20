@@ -69,4 +69,9 @@ UC9
 ALTER TABLE address_book_table ADD name VARCHAR(250) NOT NULL AFTER lastname;
 ALTER TABLE address_book_table ADD type VARCHAR(250) NOT NULL AFTER name;
 
+--------------------------------------------------------------------------------------------------------------------
+
+UC10
+
+SELECT type, COUNT(*) FROM address_book_table GROUP BY type;
  
