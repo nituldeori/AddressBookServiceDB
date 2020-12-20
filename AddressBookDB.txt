@@ -46,6 +46,15 @@ DELETE FROM address_book_table WHERE firstname = 'Bill' AND lastname = 'Smith';
 
 UC6
 
-SELECT (firstname, lastname, address, city, state, zip, phone_number, email)
+SELECT (firstname, lastname, address, city, state, zip, phone_number, email) from address_book_table
        WHERE city = 'Guwahati' OR city = 'Dibrugarh';
+
+----------------------------------------------------------------------------------------------------------------
+
+UC7
+
+SELECT city, COUNT(*) FROM address_book_table GROUP BY city;
+SELECT state, COUNT(*) FROM address_book_table GROUP BY state;
+
+
  
