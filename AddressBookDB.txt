@@ -34,4 +34,10 @@ UC4
 
 UPDATE address_book_table
 SET address = 'Milan Nagar', city = 'Dibrugarh'
-WHERE firstname = 'Bill' AND lastname = 'Smith'; 
+WHERE firstname = 'Bill' AND lastname = 'Smith';
+
+--------------------------------------------------------------------------------------------------------------
+
+UC5
+
+DELETE FROM address_book_table WHERE firstname = 'Bill' AND lastname = 'Smith'; 
