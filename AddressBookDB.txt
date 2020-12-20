@@ -3,3 +3,27 @@ UC1
 CREATE DATABASE address_book_service;
 SHOW DATABASES;
 USE address_book_service;
+---------------------------------------------------------------------------
+
+UC2
+
+CREATE TABLE address_book_table
+( 
+   id            INT unsigned NOT NULL AUTO_INCREMENT,
+   firstname     VARCHAR(150) NOT NULL,
+   lastname      VARCHAR(150) NOT NULL,
+   address       VARCHAR(250),
+   city          VARCHAR(150),
+   state         VARCHAR(150),
+   zip           VARCHAR(150),
+   phone_number  VARCHAR(150),
+   email         VARCHAR(150),
+   PRIMARY KEY   (id)
+);
+
+-----------------------------------------------------------------------------
+
+UC3
+
+INSERT INTO address_book_table (firstname, lastname, address, city, state, zip, phone_number, email) VALUES
+    ( 'Bill', 'Smith', 'Hengrabari', 'Guwahati', 'Assam', '781036', '38723837', 'bill@gmail.com');
